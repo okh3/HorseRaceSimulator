@@ -12,9 +12,7 @@ public class Main {
             // Ignore if we can't set the encoding
         }
         
-        // Create the main GUI window
-        MainGUI mainGUI = new MainGUI();
-        mainGUI.setVisible(true);
+        MainGUI.startRaceGUI();
     }
 }
  

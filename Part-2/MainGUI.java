@@ -693,7 +693,7 @@ public class MainGUI extends JFrame {
         }
     }
     
-    public static void main(String[] args) {
+    public static void startRaceGUI(){
         SwingUtilities.invokeLater(() -> {
             MainGUI gui = new MainGUI();
             gui.setVisible(true);
