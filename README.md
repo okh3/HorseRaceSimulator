@@ -141,7 +141,10 @@ HorseRaceSimulator/
 │   ├── BettingSystem.java # Betting system implementation
 │   ├── Statistics.java   # Statistics tracking
 │   ├── Main.java         # GUI program entry point
+<<<<<<< HEAD
 │   └── README.md         # Documentation
+=======
+>>>>>>> bc813c8b74b7f7c1968d188e35f4e40239df9d26
 ```
 
 ## Dependencies
