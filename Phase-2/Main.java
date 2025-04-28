@@ -1,3 +1,6 @@
+import javax.swing.*;
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,8 +12,9 @@ public class Main {
             // Ignore if we can't set the encoding
         }
         
-        Race race = new Race(20);
-        race.startRace();
+        // Create the main GUI window
+        MainGUI mainGUI = new MainGUI();
+        mainGUI.setVisible(true);
     }
 }
  
