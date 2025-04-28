@@ -170,3 +170,7 @@ HorseRaceSimulator/
 - Original starter code by Pony McRaceface
 - Java documentation and community resources
 - Swing GUI framework
+<<<<<<< HEAD
+=======
+
+>>>>>>> 48950e787b803a380a49819be1e30607d6a42738
