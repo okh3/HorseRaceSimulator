@@ -110,6 +110,79 @@ This project implements a horse racing simulation that demonstrates core Object-
    - Part 1: Text-based display with real-time race progress
    - Part 2: Interactive GUI with enhanced visualization and controls
 
+### Invoking Race Methods
+
+#### Part 1: Text-based Race
+The text-based race is started using the `startRace()` method in the `Race` class. Here's how to use it:
+
+1. **Basic Usage**:
+   ```java
+   Race race = new Race(20);  // Create a race with 20 units length
+   race.startRace();          // Start the race
+   ```
+
+2. **Customizing the Race**:
+   ```java
+   // Create a custom race
+   Race race = new Race(30);  // 30 units length
+   
+   // Add custom horses
+   Horse horse1 = new Horse('H', "Thunder", 0.7);
+   Horse horse2 = new Horse('S', "Storm", 0.5);
+   
+   // Add horses to specific lanes
+   race.addHorse(horse1, 0);
+   race.addHorse(horse2, 1);
+   
+   // Start the race
+   race.startRace();
+   ```
+
+3. **Race Features**:
+   - Real-time text-based visualization
+   - Automatic horse movement based on confidence
+   - Fall mechanics
+   - Winner detection
+   - Race progress display
+
+#### Part 2: GUI-based Race
+The GUI-based race is started using the `startRaceGUI()` method. Here's how to use it:
+
+1. **Basic Usage**:
+   ```java
+   RaceGUI race = new RaceGUI(20);  // Create a GUI race with 20 units length
+   race.startRaceGUI();             // Start the GUI race
+   ```
+
+2. **Customizing the Race**:
+   ```java
+   // Create a custom GUI race
+   RaceGUI race = new RaceGUI(30);  // 30 units length
+   
+   // Add custom horses with enhanced features
+   HorseGUI horse1 = new HorseGUI('H', "Thunder", 0.7, "Thoroughbred");
+   HorseGUI horse2 = new HorseGUI('S', "Storm", 0.5, "Arabian");
+   
+   // Add horses to specific lanes
+   race.addHorse(horse1, 0);
+   race.addHorse(horse2, 1);
+   
+   // Configure track and weather
+   race.setTrackShape("Oval");
+   race.setWeather("Clear");
+   
+   // Start the race
+   race.startRaceGUI();
+   ```
+
+3. **GUI Race Features**:
+   - Interactive visual race display
+   - Real-time betting interface
+   - Weather effects
+   - Track customization
+   - Advanced statistics display
+   - Enhanced horse management
+
 ### Customizing the Race
 The program supports different configurations in each part:
 
@@ -141,10 +214,7 @@ HorseRaceSimulator/
 │   ├── BettingSystem.java # Betting system implementation
 │   ├── Statistics.java   # Statistics tracking
 │   ├── Main.java         # GUI program entry point
-<<<<<<< HEAD
 │   └── README.md         # Documentation
-=======
->>>>>>> bc813c8b74b7f7c1968d188e35f4e40239df9d26
 ```
 
 ## Dependencies
